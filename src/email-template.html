@@ -1,0 +1,104 @@
+<html>
+    <head>
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700,800,900);
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            white-space: normal;
+            line-height: normal;
+            background: #eee;
+        }
+        .email-body{
+            background: #fff;
+            padding: 20px;
+            width: 60%;
+            margin: 0 auto;
+            min-height: 350px;
+            max-height: 500px;
+        }
+        .email-banner{
+            width: 63%;
+            margin: 0 auto;
+            height: 250px;
+            overflow: hidden;
+        }
+        .email-banner img.banner{
+            width: 100%;
+        }
+        .email-banner img.logo{
+            position: absolute;
+            width: 200px;
+            height: auto;
+            margin-top: 10px;
+        }
+        .email-message{
+            font-style: italic;
+            margin-bottom: 10px;
+            padding: 10px;
+            opacity: 0.7;
+        }
+        .contact-info{
+            opacity: 0.7;
+        }
+        .email-signature{
+            color: #e71b5f;
+            font-size: 24px;
+            margin: 3px 0;
+            font-weight: 500;
+        }
+        .sincerely{
+            opacity: 0.7;
+            font-size: 12px;
+        }
+        .footer{
+            position: relative;
+            bottom: 0;
+            padding: 20px;
+            background: #000;
+            color: #eee;
+            width: 60%;
+            margin: 0 auto;
+        }
+        .footer .company, .footer .provider{
+            width: 50%;
+            display: inline;
+            font-size: 10px;
+        }
+        .footer .provider{
+            float: right;
+            text-align: right;
+        }
+    </style>
+    <title>{Full Name} - {title || Send a message}</title>
+    </head>
+    <body>
+        <div class="email-banner">
+            <img class="logo" src="https://i.imgur.com/z8nW9rS.jpg" />
+            <img class="banner" src="https://i.imgur.com/EXkx93q.png" />
+        </div>
+        <div class="email-body">
+            <div class="header">Hi Wayne,</div>
+            <div class="content">
+                <div class="contact-info">
+                <p><strong>{Full Name}</strong> sent a message.</p>
+                <p>Contact Email: <strong>{sender@email.com}</strong></p>
+                <p>Subject/Purpose: <strong>{Full Name}</strong></p>
+                <div>Message:</div>
+                </div>
+                <div class="email-message">
+                    <!-- message here, put this block in variable -->
+                    <p>Hello, this is a sample message. Please reply back to confirm.<br/><br/>Thanks!</p>
+                    <!-- end of message -->
+                </div>
+            </div>
+            <p class="sincerely">Sent from,</p>
+            <p class="email-signature">Wayne Power Trading Web Portal</p>
+        </div>
+        <div class="footer">
+            <div class="company">Wayne Power Trading © 2018</div>
+            <div class="provider">Powered by Corecircle IT Solutions.</div>
+        </div>
+    </body>
+</html>
